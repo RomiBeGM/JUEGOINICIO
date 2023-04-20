@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242424;
+    color: #fafafa;
+}
+
+main {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.tittle {
+	margin-top: 10px
+}
+
+.cardWrapper {
+    display: flex;
+	align-items: center;
+	gap: 1rem;
+	height: 300px;
+	width: 700px;
+	background-color: #3aac53;
+	border-radius: 10px;
+	box-shadow: 0 0 15px #97ce4c;
+	color: #323232;
+}
+
+
+
+.imgContainer {
+    height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+} 
+
+.imgContainer img {
+    height: 100%;
+	border-radius: 10px 0px 0px 10px;
+}
+
+h1 {
+    width: 100%;
+	text-align: center;
+	font-size: 2.25rem;
+	color: white;
+	text-shadow: 0 0 25px #97ce4c;
+}
+
+.sisoy_button{
+	gap: 1rem;
+	height: 50px;
+	background-color: #01b4c6;
+	border-radius: 10px;
+	box-shadow: 0 0 15px #97ce4c;
+	color: #323232;
+	margin: 50px;
+	color: #323232;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.infoContainer {
+    width: 80%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	gap: 1rem;
+}
+
+.main__infoContainer{
+	flex-direction: column;
+}
+
+.waitCard {
+	width: 100%;
+}
+
+.main_button{
+	gap: 1rem;
+	height: 50px;
+	width: 200px;
+	background-color: #01b4c6;
+	border-radius: 10px;
+	box-shadow: 0 0 15px #97ce4c;
+	color: #323232;
+	margin: 50px;
+	color: #323232;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.div_button {
+	text-align-last: center;
+}
+
+.contador{
+	width: 100%;
+}
+
+.contador_num {
+	font-weight: bold;
+	border-radius: 10%;
+	border: 1px dashed #97ce4c;
+	padding: 5px;
+}
+
+@media (max-width: 767px) {
+	.cardWrapper {
+	  text-align: center;
+	}
+	.imgContainer {
+	  max-width: 100%;
+	}
+	.main_button {
+	  display: block;
+	  width: 100%;
+	  margin-bottom: 10px;
+	}
+
+	.contador{
+		margin-right: 20px;
+		text-align: -webkit-center;
+	}
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+	.cardWrapper {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+	.imgContainer {
+	  max-width: 80%;
+	}
+
+	.contador{
+		margin-right: 20px;
+		text-align: -webkit-center;
+	}
+  }
